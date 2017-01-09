@@ -10,6 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.alumnedam.horari.MainActivity">
 
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_weight="1" />
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,26 +27,6 @@
             android:layout_height="match_parent"
             android:paddingBottom="20dp">
 
-            <TextView
-                android:text="@string/asignatura"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/tvAsignatura"
-                android:textStyle="normal|bold"
-                android:textSize="24sp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:textColor="@android:color/black" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/tvAsignaturaAsignar"
-                android:textSize="30sp"
-                android:layout_weight="1.5"
-                android:layout_gravity="center"
-                android:text="e3dw4fvdg" />
-
         </TableRow>
 
         <TableRow
@@ -48,107 +35,19 @@
             android:paddingBottom="20dp">
 
 
-        <TextView
-            android:text="@string/hora_inici"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvHoraIn"
-            android:textStyle="normal|bold"
-            android:textSize="24sp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:textColor="@android:color/black" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvHoraInAsignar"
-            android:textSize="30sp"
-            android:layout_weight="1.5"
-            android:layout_gravity="center"
-            android:text="e3dw4fvdg" />
-
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="20dp">
-
-
-        <TextView
-                android:text="@string/hora_fin"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/tvHoraFin"
-                android:textStyle="normal|bold"
-                android:textSize="24sp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:textColor="@android:color/black" />
-
             <TextView
-                android:layout_width="0dp"
+                android:text="introdueix el nom"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvHoraFinAsignar"
-                android:textSize="30sp"
-                android:layout_weight="1.5"
-                android:layout_gravity="center"
-                android:text="e3dw4fvdg" />
+                android:id="@+id/textView2" />
 
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="20dp">
-
-
-        <TextView
-                android:text="@string/clase"
-                android:layout_width="0dp"
+            <EditText
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvClase"
-                android:textStyle="normal|bold"
-                android:textSize="24sp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:textColor="@android:color/black" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/tvClaseAsignar"
-                android:textSize="30sp"
-                android:layout_weight="1.5"
-                android:layout_gravity="center"
-                android:text="e3dw4fvdg" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="20dp">
-
-            <TextView
-                android:text="@string/profesor"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/tvProfesor"
-                android:textStyle="normal|bold"
-                android:textSize="24sp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:textColor="@android:color/black" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/tvProfesorAsignar"
-                android:textSize="30sp"
-                android:layout_weight="1.5"
-                android:layout_gravity="center"
-                android:text="e3dw4fvdg" />
-
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/editText" />
         </TableRow>
 
         <TableRow
@@ -174,36 +73,23 @@
                 android:textSize="30sp"
                 android:layout_weight="1.5"
                 android:layout_gravity="center"
-                android:text="e3dw4fvdg" />
+                android:text="grupo" />
 
         </TableRow>
-
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
 
-            <TextView
-                android:text="@string/dia"
-                android:layout_width="0dp"
+
+            <Button
+                android:text="Anar al horari"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvDia"
-                android:textStyle="normal|bold"
-                android:textSize="24sp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:textColor="@android:color/black" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/tvDiaAsignar"
-                android:textSize="30sp"
-                android:layout_weight="1.5"
-                android:layout_gravity="center"
-                android:text="e3dw4fvdg" />
-
+                android:id="@+id/button2" />
         </TableRow>
+
 
     </TableLayout>
 
